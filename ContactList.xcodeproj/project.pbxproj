@@ -31,7 +31,7 @@
 		B04F6D812AEC455D0012A438 /* Person.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
 		B04F6D882AEC47A20012A438 /* PersonTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = PersonTableViewController.swift; path = ContactList/ViewControllers/PersonTableViewController.swift; sourceTree = SOURCE_ROOT; };
 		B04F6D8C2AEC697D0012A438 /* PersonDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = PersonDetailsViewController.swift; path = ContactList/ViewControllers/PersonDetailsViewController.swift; sourceTree = SOURCE_ROOT; };
-		B04F6D912AEC89E00012A438 /* DataStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = DataStore.swift; path = Models/DataStore.swift; sourceTree = "<group>"; };
+		B04F6D912AEC89E00012A438 /* DataStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataStore.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,7 +64,6 @@
 		B04F6D6A2AEC18100012A438 /* ContactList */ = {
 			isa = PBXGroup;
 			children = (
-				B04F6D912AEC89E00012A438 /* DataStore.swift */,
 				B04F6D832AEC460D0012A438 /* ViewControllers */,
 				B04F6D842AEC46230012A438 /* Models */,
 				B04F6D852AEC464F0012A438 /* Storyboards */,
@@ -106,6 +105,7 @@
 			children = (
 				B04F6D6B2AEC18100012A438 /* AppDelegate.swift */,
 				B04F6D6D2AEC18100012A438 /* SceneDelegate.swift */,
+				B04F6D912AEC89E00012A438 /* DataStore.swift */,
 				B04F6D792AEC18110012A438 /* Info.plist */,
 			);
 			path = SupportingFiles;

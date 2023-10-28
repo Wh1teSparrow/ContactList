@@ -7,7 +7,7 @@
 
 import UIKit
 
-class PersonsListViewController: UITableViewController {
+final class PersonsListViewController: UITableViewController {
     
     var personsList = Person.getPersonsList()
 
