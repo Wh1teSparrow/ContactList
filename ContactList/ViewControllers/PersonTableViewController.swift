@@ -8,36 +8,36 @@
 import UIKit
 
 class PersonTableViewController: UITableViewController {
-
-    override func viewDidLoad() {
-        super.viewDidLoad()
-    }
-    
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
+    var personList = Person.getPersonsList()
 }
 
 
 // MARK: - Table view data source
 extension PersonTableViewController {
     override func numberOfSections(in tableView: UITableView) -> Int {
-        10
+        personList.count
     }
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         2
     }
     
+    override func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
+        let person = personList[section]
+        
+        return person.fullName
+    }
+    
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "personInfo", for: indexPath)
+        
+        let person = personList[indexPath.row]
+        
+        var content = cell.defaultContentConfiguration()
+        
+        content.text = person.phone
+        
+        cell.contentConfiguration = content
         
         return cell
     }

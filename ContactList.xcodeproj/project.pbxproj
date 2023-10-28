@@ -15,7 +15,8 @@
 		B04F6D802AEC3F4D0012A438 /* PersonsListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B04F6D7F2AEC3F4D0012A438 /* PersonsListViewController.swift */; };
 		B04F6D822AEC455D0012A438 /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = B04F6D812AEC455D0012A438 /* Person.swift */; };
 		B04F6D892AEC47A20012A438 /* PersonTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B04F6D882AEC47A20012A438 /* PersonTableViewController.swift */; };
-		B04F6D8B2AEC506C0012A438 /* DataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = B04F6D8A2AEC506C0012A438 /* DataSource.swift */; };
+		B04F6D8D2AEC697D0012A438 /* PersonDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B04F6D8C2AEC697D0012A438 /* PersonDetailsViewController.swift */; };
+		B04F6D922AEC89E00012A438 /* DataStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = B04F6D912AEC89E00012A438 /* DataStore.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,7 +30,8 @@
 		B04F6D7F2AEC3F4D0012A438 /* PersonsListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonsListViewController.swift; sourceTree = "<group>"; };
 		B04F6D812AEC455D0012A438 /* Person.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
 		B04F6D882AEC47A20012A438 /* PersonTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = PersonTableViewController.swift; path = ContactList/ViewControllers/PersonTableViewController.swift; sourceTree = SOURCE_ROOT; };
-		B04F6D8A2AEC506C0012A438 /* DataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = DataSource.swift; path = ContactList/DataSource.swift; sourceTree = SOURCE_ROOT; };
+		B04F6D8C2AEC697D0012A438 /* PersonDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = PersonDetailsViewController.swift; path = ContactList/ViewControllers/PersonDetailsViewController.swift; sourceTree = SOURCE_ROOT; };
+		B04F6D912AEC89E00012A438 /* DataStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = DataStore.swift; path = Models/DataStore.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,11 +64,11 @@
 		B04F6D6A2AEC18100012A438 /* ContactList */ = {
 			isa = PBXGroup;
 			children = (
+				B04F6D912AEC89E00012A438 /* DataStore.swift */,
 				B04F6D832AEC460D0012A438 /* ViewControllers */,
 				B04F6D842AEC46230012A438 /* Models */,
 				B04F6D852AEC464F0012A438 /* Storyboards */,
 				B04F6D862AEC466B0012A438 /* SupportingFiles */,
-				B04F6D8A2AEC506C0012A438 /* DataSource.swift */,
 				B04F6D872AEC46850012A438 /* Resources */,
 			);
 			path = ContactList;
@@ -77,6 +79,7 @@
 			children = (
 				B04F6D7F2AEC3F4D0012A438 /* PersonsListViewController.swift */,
 				B04F6D882AEC47A20012A438 /* PersonTableViewController.swift */,
+				B04F6D8C2AEC697D0012A438 /* PersonDetailsViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -187,12 +190,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B04F6D8B2AEC506C0012A438 /* DataSource.swift in Sources */,
+				B04F6D922AEC89E00012A438 /* DataStore.swift in Sources */,
 				B04F6D892AEC47A20012A438 /* PersonTableViewController.swift in Sources */,
 				B04F6D6C2AEC18100012A438 /* AppDelegate.swift in Sources */,
 				B04F6D802AEC3F4D0012A438 /* PersonsListViewController.swift in Sources */,
 				B04F6D822AEC455D0012A438 /* Person.swift in Sources */,
 				B04F6D6E2AEC18100012A438 /* SceneDelegate.swift in Sources */,
+				B04F6D8D2AEC697D0012A438 /* PersonDetailsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

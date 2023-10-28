@@ -9,22 +9,15 @@ import UIKit
 
 class PersonsListViewController: UITableViewController {
     
-    private var personsList = Person.getPersonsList()
+    var personsList = Person.getPersonsList()
 
-    override func viewDidLoad() {
-        super.viewDidLoad()
-    }
-
-    /*
     // MARK: - Navigation
 
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+        guard let indexPath = tableView.indexPathForSelectedRow else { return }
+        guard let detailsVC = segue.destination as? PersonDetailsViewController else { return }
+        detailsVC.person = personsList[indexPath.row]
     }
-    */
-
 }
 
 // MARK: - Table view data source
@@ -41,6 +34,8 @@ extension PersonsListViewController {
         var content = cell.defaultContentConfiguration()
         
         content.text = person.fullName
+        
+        cell.contentConfiguration = content
         
         return cell
     }
